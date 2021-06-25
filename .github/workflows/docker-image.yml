@@ -37,7 +37,7 @@ jobs:
         push: true
         tags: |
           ${{ env.repo }}:${{ matrix.versions }}
-        working-directory: ./pgsync/docker
+      working-directory: ./pgsync/docker
     - name: Build and push latest
       uses: docker/build-push-action@v2.5.0
       with:
@@ -47,7 +47,7 @@ jobs:
         push: true
         tags: |
           ${{ env.repo }}:latest
-        working-directory: ./pgsync/docker
+      working-directory: ./pgsync/docker
     - name: Update repo description
       uses: peter-evans/dockerhub-description@v2.4.3
       with:
