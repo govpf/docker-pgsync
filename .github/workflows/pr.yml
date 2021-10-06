@@ -22,7 +22,7 @@ jobs:
       run: git clone -b ${{ matrix.versions }} https://github.com/toluaina/pgsync
 
     - name: Build
-      uses: docker/build-push-action@v2.5.0
+      uses: docker/build-push-action@v2.7.0
       with:
         context: ./pgsync
         platforms: linux/amd64
