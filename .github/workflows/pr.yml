@@ -27,6 +27,6 @@ jobs:
         context: ./pgsync
         platforms: linux/amd64
         pull: true
-        push: true
+        push: false
         tags: |
           ${{ env.repo }}:${{ matrix.versions }}
